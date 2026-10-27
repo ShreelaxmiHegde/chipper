@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Chipper · MyTask</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute">
+      <symbol id="chip" viewBox="0 0 100 100">
+        <circle cx="24" cy="27" r="11" fill="#b8692c"/>
+        <circle cx="76" cy="27" r="11" fill="#b8692c"/>
+        <circle cx="24" cy="27" r="5" fill="#f4b6a0"/>
+        <circle cx="76" cy="27" r="5" fill="#f4b6a0"/>
+        <ellipse cx="50" cy="56" rx="36" ry="31" fill="#d98b4a"/>
+        <path d="M50 26v18" stroke="#3d2210" stroke-width="5" stroke-linecap="round"/>
+        <path d="M41 28q-3 8 0 16M59 28q3 8 0 16" stroke="#f6e3c4" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M33 31q-4 9-1 17M67 31q4 9 1 17" stroke="#3d2210" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="24" cy="68" rx="12" ry="10" fill="#f6e3c4"/>
+        <ellipse cx="76" cy="68" rx="12" ry="10" fill="#f6e3c4"/>
+        <ellipse cx="50" cy="69" rx="17" ry="12" fill="#f6e3c4"/>
+        <circle cx="30" cy="62" r="4" fill="#ff9db8" opacity=".7"/>
+        <circle cx="70" cy="62" r="4" fill="#ff9db8" opacity=".7"/>
+        <circle cx="37" cy="54" r="5" fill="#1a1008"/>
+        <circle cx="63" cy="54" r="5" fill="#1a1008"/>
+        <circle cx="38.6" cy="52.4" r="1.7" fill="#fff"/>
+        <circle cx="64.6" cy="52.4" r="1.7" fill="#fff"/>
+        <ellipse cx="50" cy="63" rx="4.5" ry="3.2" fill="#2a1a10"/>
+        <path d="M50 66v3M50 69q-4 4-8 1M50 69q4 4 8 1" stroke="#2a1a10" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+        <rect x="46.5" y="69" width="7" height="7" rx="2" fill="#fff" stroke="#ccc"/>
+      </symbol>
+    </svg>
+
+    <header>
+      <div class="logo">
+        <svg class="stk" viewBox="0 0 100 100">
+          <use href="#chip"/>
+        </svg>Chipper
+      </div>
+
+      <nav class="tabs">
+        <button data-act="tab" data-d="cal">Calendar</button>
+        <button data-act="tab" data-d="prog">Progress</button>
+        <button data-act="tab" data-d="tasks">Tasks</button>
+      </nav>
+      <button class="btn sm ghost" id="fbtn" data-act="folder" title="Mirror every task file into a folder on your computer"></button>
+    </header>
+
+    <main id="app"></main>
+    <dialog id="dlg"></dialog>
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
